@@ -1,0 +1,19 @@
+---
+spring:
+  kafka:
+    bootstrap-servers: 192.168.6.233:9092,192.168.6.236:9092,192.168.6.238:9092
+    consumer:
+      group-id:  0408-g1
+      auto-offset-reset: latest
+      enable-auto-commit: false
+
+server:
+  port: 13579
+kafka:
+  odps:
+    consumer:
+      threads: 5
+      topic: 0318
+
+
+

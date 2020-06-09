@@ -1,0 +1,16 @@
+server:
+  port: 13579
+#spring:
+#  main:
+#    web-application-type: none
+
+spring:
+  profiles:
+    active: test
+
+
+  kafka:
+    listener:
+      ack-mode: manual
+    consumer:
+      max-poll-records: 500

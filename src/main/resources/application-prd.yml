@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    bootstrap-servers: bd-hermes-kafka-prd-03636-ecs:9092,bd-hermes-kafka-prd-03635-ecs:9092,bd-hermes-kafka-prd-03637-ecs:9092,bd-hermes-kafka-prd-03932-ecs:9092,bd-hermes-kafka-prd-03933-ecs:9092,bd-hermes-kafka-prd-03931-ecs:9092,bd-hermes-kafka-prd-04155-ecs:9092,bd-hermes-kafka-prd-04153-ecs:9092,bd-hermes-kafka-prd-04154-ecs:9092
+    consumer:
+      group-id: bd_realtime_user_track_odps
+      auto-offset-reset: latest
+      enable-auto-commit: false
+server:
+  port: 13579
+kafka:
+  odps:
+    consumer:
+      threads: 5
+      topic: user_track_clean
+#      topic: kafka_test
